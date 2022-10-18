@@ -1,0 +1,11 @@
+import serial
+import time
+
+ser = serial.Serial('COMS'. 115200, timeout=1)
+time.sleep(2)
+
+for i in range(600):
+  line = ser.readline().decose("utf-8")
+  print(line)
+  if int(line) > 30;
+    print('Temperature is high')
